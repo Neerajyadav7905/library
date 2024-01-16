@@ -1,0 +1,582 @@
+
+*{
+    margin:0;
+    padding:0;
+    line-height: 1.5;
+    box-sizing:border-box;
+    font-family:'Lucida Sans';
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/*naviagtion design*/
+
+.nav{
+    z-index: 1;
+    position: fixed;
+    line-height:40px;
+    width:100%;
+    height:40px;
+    background-color:rgb(60,60,60);
+}
+.brand p{
+    color:white;
+    font-size: 16px;
+    line-height: 40px;
+    padding:0px 8vw;
+}
+.user-section{
+    float:right;
+    text-align: right;
+}
+.user-section p{
+    color:white;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0 50px;
+}
+.user-section a{
+    color:white;
+    font-size: 14px;
+    line-height: 40px;
+    
+    text-decoration: none;
+}
+.user-section p button{
+    background-color:rgb(60,60,60);
+    padding:0 10px;
+    color:white;
+    border: none;
+}
+.nav ul li{
+    width:50%;
+    list-style-type:none;
+    float:left;
+}
+
+/* layout */
+.layout{
+    padding-top: 40px;
+    width:100%;
+}
+.sidebar{
+    position: fixed;
+    height: 95vh;
+    width:20%;
+    float:left;
+    padding:5px 10px;
+    background-color: rgb(0, 112, 240);
+    padding:20px;
+}
+.section{
+    margin-left: 20%;
+    width:80%;
+    float:left;
+}
+
+.sidebar ul{
+    margin:5px 0px 5px 15px;
+
+}
+.sidebar ul li{
+list-style: none;
+}
+.sidebar ul li a{
+font-size: 16px;
+font-weight: bold;
+text-decoration: none;
+color:rgb(255, 255, 255);
+opacity: 0.95;
+}
+.sidebar h3{
+    text-decoration: underline;
+    color:rgb(255, 255, 255);
+    opacity: 0.9;
+    }
+.layout::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .book-form::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+/*section */
+.mainheading{
+    color:white;
+    opacity:0.95;
+    font-size: 22px;
+    padding: 7px 40px;
+    background-color: rgb(0, 189, 142);
+}
+/* dashboard divide */
+.dashboard-section{
+    text-align: center;
+    width:100%;
+}
+.dashboard-section-divide{
+    display: inline-block;
+    height:250px;
+    margin:60px 30px;
+    width:250px;
+    background-color: rgb(35, 236, 250);
+    border-radius: 20px;
+}
+.dashboard-section-divide h3{
+color:rgb(36, 36, 36);
+padding:20px 10px;
+font-weight: bolder;
+font-size: 22px;
+opacity: 0.9;
+}
+.dashboard-section-divide p{
+color: rgb(36, 36, 36);
+font-size: 35px;
+font-weight: bolder;
+opacity: 0.9;
+padding:30px 0px;
+}
+.dashboard-section::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* drop design */
+.drop{
+    display:none;
+}
+
+.dropdown{
+    border: none;
+font-size: 15px;
+background-color: inherit;
+padding: 2px 5px;
+}
+/*content design */
+
+/*add button form design*/
+.book{
+padding:30px 40px;
+}
+.book h3{
+opacity: 0.95;
+padding:5px 20px;
+width:100%;
+font-size: 18px;
+color:rgb(20, 20, 20);
+background-color: rgb(224, 224, 224);
+border: 2px solid rgb(196, 194, 194);
+border-radius: 8px;
+}
+.successmsg{
+    font-size:14px;
+    font-weight: bold;
+    margin:20px 0px;
+    opacity: 0.95;
+    padding:5px 20px;
+    width:98%;
+    color:rgb(255, 255, 255);
+    background-color: rgb(10, 190, 160);
+    border-radius: 8px;
+    }
+.errormsg{
+        font-size:14px;
+        font-weight: bold;
+        margin:20px 0px;
+        opacity: 0.95;
+        padding:5px 20px;
+        width:98%;
+        color:rgb(255, 255, 255);
+        background-color: rgb(255, 74, 43);
+        border-radius: 8px;
+        }
+.book p{
+    font-size: 14px;
+    float: right;
+    opacity: 0.95;
+    padding:5px 20px;
+    color:rgb(92, 92, 92);
+    display: inline;
+    }
+.book-form{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.book-form label{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left:40px;
+    display: inline;
+    float:left;
+}
+.book-form input,.book-form select{
+display: block;
+height:30px;
+width:200px;
+font-weight: bold;
+font-size: 12px;
+padding:3px 10px;
+margin: 10px 2px;
+border-radius: 7px;
+border: 2px solid rgb(117, 117, 117);
+}
+.book-form button{
+    font-size: 14px;
+    background-color: rgb(0, 134, 134);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 5px 40px;
+    margin-top: 33px;
+    padding:3px 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 134, 134);
+}
+/* table design*/
+
+.book-table{
+    width:98%;
+    margin:50px 6%;
+}
+
+.book-table table{
+    border-spacing: 0px 10px;
+    width:90%;
+}
+.book-table th{
+    text-align: left;
+    padding:5px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 89, 172);
+}
+.book-table td{
+    color:rgb(19, 19, 19);
+    padding:7px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: rgb(209, 209, 209);
+}
+/* search menu*/
+.book-search{
+    float: right;
+    margin: 0px 50px;
+}
+.book-search input{
+border-radius: 5px;
+padding: 2px 10px;
+border: 1px solid rgb(34, 34, 34);
+}
+.book-search button{
+    border-radius: 5px;
+    margin:0px 20px;
+    padding: 1px 5px;
+    border: 1px solid rgb(34, 34, 34);
+    background-color: rgb(3, 218, 171);
+    }
+.book-search button:hover{
+    background-color: rgb(0, 163, 128);
+
+    }
+
+/*edit btn , del btn */
+.editbtn{
+    width:80px;
+    font-weight: bold;
+    opacity: 0.95;
+    padding : 2px 15px;
+    border-radius: 3px;
+    border: 1px solid rgb(255, 226, 99);
+    background-color: rgb(250, 161, 46);
+}
+.editbtn:hover{
+    background-color:rgb(231, 131, 0);
+}
+.editpopupcontainer{
+    width:inherit;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    display: block;
+}
+.editpopup{
+    margin: 80px auto;
+    padding:15px;
+    width:600px;
+    height:400px;
+    background-color: rgb(0, 112, 240);
+}
+.editpopupclosbtn button{
+    float:right;
+    margin:5px 15px;
+    padding:0px 7px;
+    border-radius: 50%;
+    border: inherit;
+    color:white;
+    background-color:inherit;
+    font-size: 18px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.editpopupclosbtn button:hover{
+    color:white;
+}
+
+.edit-data-container h3{
+    padding: 5px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color:rgb(241, 241, 241);
+    text-align: center;
+}
+.edit-data-container{
+    margin: 5px 22px;
+    width:98%;
+}
+.edit-data-container table{
+    color:white;
+    width:98%;
+}
+.edit-data-container tr{
+
+text-align: left;
+}
+.edit-data-container td{
+font-size: 14px;
+padding:5px 0px;
+font-weight: bold;
+
+}
+.edit-data-container input{
+    width:90%;
+    height:30px;
+    font-size: 12px;
+    font-weight: bold;
+    padding:5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(216, 216, 216);
+}
+.edit-data-container button{
+    padding:3px 15px;
+    margin:30px;
+    border-radius: 3px;
+    float:right;
+    font-weight: bold;
+    border: 1px solid rgb(224, 224, 224);
+}
+.delbtn{
+    font-weight: bold;
+    opacity: 0.95;
+    padding : 2px 15px;
+    border-radius: 3px;
+    border: 1px solid rgb(248, 73, 20);
+    background-color: rgb(255, 69, 22);
+}
+.delbtn:hover{
+    background-color: rgb(197, 41, 2);
+}
+
+
+/* select button book informarion page */
+#book-select{
+    float: right;
+    margin: 0px 50px;
+}
+#book-select select{
+border-radius: 5px;
+padding: 2px 10px;
+border: 1px solid rgb(34, 34, 34);
+}
+
+/* show btn */
+
+.show-button{
+    float: right;
+    margin: 0px 50px;
+}
+.show-button button{
+    color:red;
+}
+
+#drop3{
+    display: block;
+}
+#drop4{
+    display: block;
+}
+
+#drop5{
+    display: block;
+}
+/* form design */
+
+#form{
+    min-height: 82vh;
+    line-height: 2;
+    width:650px;
+    padding:100px 30px;
+    margin:0px auto;
+}
+#form h3{
+    color:rgb(10,10,10);
+    padding:10px;
+    text-align:center;
+    text-decoration: underline;
+}
+#form label{
+   margin:20px;
+   color:rgb(10,10,10);
+}
+#form input,#form select{
+    margin: 0px 25px;
+    padding:5px 10px;
+    width:550px;
+    height:35px;
+    border:1px solid gray;
+    border-radius:5px;
+}
+
+#form #checkbox{
+ display:inline-block;
+    width:15px;
+    margin:20px 10px;
+    height:15px;
+}
+.small p{
+
+    font-size: 10px;
+    color:red;
+}
+
+#submitbtn{
+    background-color: aquamarine;
+    display:block;
+    font-size:14px;
+    padding:10px 20px;
+    border-radius:8px;
+    margin:20px auto;
+}
+#submitbtn:hover{
+    background-color: rgb(47, 129, 102);
+}
+.about h3{
+    margin : 30px;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.forgetpassword{
+    width:100%;
+    padding:50px;
+}
+.centerdiv{
+    width:450px;
+    margin:50px auto;
+    padding:20px;
+}
+.centerdiv table caption{
+    float:left;
+    font-size: 22px;
+    color: rgb(27, 27, 156);
+    padding-bottom: 15px;
+    padding-left: 25px;
+    font-weight: bold;
+}
+.centerdiv table td{
+    padding:3px 3px;
+
+    }
+.centerdiv table td{
+    font-size: 14px;
+    font-weight: bold;
+}
+.centerdiv table input{
+    width: 250px;
+    padding:4px 10px;
+    color: rgb(32, 32, 32);
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid rgb(182, 182, 182);
+    }
+.centerdiv table button{
+
+    margin-left:10px;
+    padding:3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(22, 22, 22);
+    border: 2px solid rgb(0, 158, 105);
+    border-radius: 5px;
+    background-color: rgb(0, 158, 105);
+}
+.centerdiv a{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 50px;
+    display: block;
+}
+.centerdiv p{
+    font-size: 10px;
+    color:red;
+    font-weight: bold;
+}
+
+.login-msg{
+    color:red; 
+    margin-top:7px; 
+    margin-left:24px; 
+    font-size:12px;
+}
+
+@media screen and (max-width:800px){
+    .divide h3{
+        font-size: 17px;
+    }
+    .divide p{
+        font-size:15px;
+    }
+    .topimg p{
+        font-size:18px;
+    }
+
+}
+/* Mobile screen */
+@media screen and (max-width:600px){
+    .content{
+        padding:15px 5vw;
+    }
+    .mainheading h3{
+        font-size:16px;
+    }
+    .divide{
+        width:100%;
+    }
+    .table table{
+        width:100%;
+    }
+    .more,.feedback{
+      display:none;
+      }
+      /* form data */
+      #form{
+        width:400px;
+    }
+    #form input,select{
+        width:300px;
+    }
+    .divide h3{
+        font-size: 16px;
+    }
+    .divide p{
+        font-size:14px;
+    }
+    .topimg p{
+        font-size:16px;
+    }
+}
